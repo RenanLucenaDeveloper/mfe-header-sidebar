@@ -1,5 +1,5 @@
 declare module "host/authStore" {
-  export type UseBoundStore<T> = (selector?: (state: T) => any) => any;
+  import { StoreApi, UseBoundStore } from "zustand";
 
   interface AuthState {
     user: {
@@ -9,16 +9,16 @@ declare module "host/authStore" {
     logout: () => void;
   };
 
-  export const useAuthStore: UseBoundStore<AuthState>;
+  export const useAuthStore: UseBoundStore<StoreApi<AuthState>>;
 }
 
 declare module "host/sidebarStore" {
-  export type UseBoundStore<T> = (selector?: (state: T) => any) => any;
+  import { StoreApi, UseBoundStore } from "zustand";
 
   interface SidebarState {
     isActive: boolean;
     setActive: (status: boolean) => void;
   };
 
-  export const useSidebarStore: UseBoundStore<SidebarState>;
+  export const useSidebarStore: UseBoundStore<StoreApi<SidebarState>>;
 }

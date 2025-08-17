@@ -8,7 +8,7 @@ export default defineConfig({
   plugins: [
     react(),
     federation({
-      name: "mfe-header-sidebar",
+      name: "mfeHeaderSidebar",
       filename: "remoteEntry.js",
       exposes: {
         "./Header": "./src/components/Header.tsx",
@@ -17,7 +17,7 @@ export default defineConfig({
       remotes: {
         host: "http://localhost:5173/assets/remoteEntry.js",
       },
-      shared: ["react", "react-dom", "zustand"],
+      shared: ["react", "react-dom", "zustand", "react-router"],
     }),
   ],
   resolve: {
