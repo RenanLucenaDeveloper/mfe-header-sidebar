@@ -1,0 +1,7 @@
+.sidebar-backdrop.active {
+    display: block;
+}
+
+.sidebar.active {
+    translate: none;
+}
