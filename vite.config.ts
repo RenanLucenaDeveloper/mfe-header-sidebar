@@ -1,4 +1,5 @@
 import { defineConfig } from 'vite'
+import tailwindcss from '@tailwindcss/vite'
 import path from 'path';
 import react from '@vitejs/plugin-react'
 import federation from "@originjs/vite-plugin-federation"
@@ -7,6 +8,7 @@ import federation from "@originjs/vite-plugin-federation"
 export default defineConfig({
   plugins: [
     react(),
+    tailwindcss(),
     federation({
       name: "mfeHeaderSidebar",
       filename: "remoteEntry.js",
@@ -28,7 +30,7 @@ export default defineConfig({
   build: {
     modulePreload: false,
     target: "esnext",
-    minify: false,
+    minify: true,
     cssCodeSplit: false
   },
   server: {

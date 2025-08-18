@@ -50,7 +50,7 @@ const Header = () => {
             </ul>
 
             <p className="text-base fw-400">
-                Olá, <span className="fw-700">{ userData.name.slice(0, 10) }</span>!
+                Olá, <span className="fw-700">{ userData.name.split(' ')[0].slice(0, 10) }</span>!
             </p>
         </nav>
     </header>
