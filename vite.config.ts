@@ -20,7 +20,7 @@ export default defineConfig(({mode}) => {
           "./Sidebar": "./src/components/Sidebar.tsx",
         },
         remotes: {
-          host: `${env.VITE_PRINCIPAL_URL || "https://mfe-header-sidebar.vercel.app"}/assets/remoteEntry.js`,
+          host: `${env.VITE_PRINCIPAL_URL || "https://teste-teddy-finance.vercel.app"}/assets/remoteEntry.js`,
         },
         shared: ["react", "react-dom", "zustand", "react-router"],
       }),
