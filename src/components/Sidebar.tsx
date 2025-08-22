@@ -18,7 +18,7 @@ const Sidebar = () => {
             <div 
               onClick={() => setActive(false)}
               className={`
-                sidebar-backdrop bg-gray-950/50 w-full h-full hidden fixed top-0 left-0 z-999
+                sidebar-backdrop bg-gray-950/50 w-full h-full hidden fixed top-0 left-0 z-97
                 ${ isActive ? 'active' : '' }
               `}>
             </div>
@@ -27,7 +27,7 @@ const Sidebar = () => {
             {/* Sidebar */}
             <div className={`
               sidebar bg-white
-              h-full fixed top-0 left-0 z-9999
+              h-full fixed top-0 left-0 z-98
               translate-x-[-150%] transition-translate duration-300
               app-bg rounded-r-2xl rounded-br-2xl
               ${ isActive ? 'active' : '' }

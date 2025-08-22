@@ -14,7 +14,7 @@ const Header = () => {
 
     return (
     <header className="
-        fixed top-0 lef-0 z-99
+        fixed top-0 lef-0 z-97
         w-full bg-white
         px-8 md:px-14 py-4
         shadow-sm 
@@ -25,7 +25,7 @@ const Header = () => {
                   type="button"
                   title="Abrir menu"
                   onClick={() => setActive(true)}
-                  className="pe-6 py-3 block md:hidden fade-in cursor-pointer">
+                  className="pe-6 py-3 block md:sr-only fade-in cursor-pointer">
                     <img src={ menuPNG } alt="" />
                 </button>
 
