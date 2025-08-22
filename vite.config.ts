@@ -17,7 +17,8 @@ export default defineConfig({
         "./Sidebar": "./src/components/Sidebar.tsx",
       },
       remotes: {
-        host: "http://localhost:5173/assets/remoteEntry.js",
+        // host: "http://localhost:5173/assets/remoteEntry.js",
+        host: "https://teste-teddy-finance.vercel.app/",
       },
       shared: ["react", "react-dom", "zustand", "react-router"],
     }),
