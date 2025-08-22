@@ -18,7 +18,7 @@ export default defineConfig({
       },
       remotes: {
         // host: "http://localhost:5173/assets/remoteEntry.js",
-        host: "https://teste-teddy-finance.vercel.app/remoteEntry.js",
+        host: "https://teste-teddy-finance.vercel.app/assets/remoteEntry.js",
       },
       shared: ["react", "react-dom", "zustand", "react-router"],
     }),
