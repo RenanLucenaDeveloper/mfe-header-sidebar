@@ -51,6 +51,7 @@ const Sidebar = () => {
                 <ul className="flex flex-col gap-3 px-6 py-12">
                     <li className="p-0 m-0">
                         <NavLink
+                          onClick={() => setActive(false)}
                           className="no-underline text-base flex align-center gap-4 p-2"
                           to="/">
                               <img src={ HomeIcon } alt="Icon" width="19px"/>
@@ -62,6 +63,7 @@ const Sidebar = () => {
                         <li className="p-0 m-0" key={ link.to }>
                             <NavLink
                               className="no-underline text-base flex align-center gap-3 p-2"
+                              onClick={() => setActive(false)}
                               to={ link.to }>
                                   { link.icon && <img src={ link.icon } alt="Icon"/>}
                                   { link.text }

@@ -29,7 +29,7 @@ const Header = () => {
                     <img src={ menuPNG } alt="" />
                 </button>
 
-                <Link to="/clients" className="p-0 m-0">
+                <Link to="/" className="p-0 m-0">
                     <img src={ LogoPNG } alt="Logotipo Teddy Open Finance" width="100px"/>
                 </Link>
             </div>

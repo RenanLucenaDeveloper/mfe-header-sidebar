@@ -7,3 +7,12 @@
 .sidebar.active {
     translate: none;
 }
+
+a.active {
+    color: var(--brand-primary);
+    text-decoration: underline;
+}
+
+a.active img {
+    filter: invert(30%) sepia(90%) saturate(900%) hue-rotate(0deg) brightness(125%) contrast(100%);
+}
